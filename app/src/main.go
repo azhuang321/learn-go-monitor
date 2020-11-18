@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/rs/zerolog/log"
 	"monitor/extend/conf"
 	"monitor/extend/logger"
+	"monitor/models"
 )
 
 func main() {
@@ -11,5 +11,7 @@ func main() {
 	conf.Setup()
 	//日志初始化
 	logger.Setup()
-	log.Info().Msg("test init")
+	//数据库的初始化
+	models.Setup()
+
 }

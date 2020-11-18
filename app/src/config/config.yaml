@@ -28,9 +28,9 @@ email:
 # 数据库配置
 database:
   dbType: mysql
-  user: monitor
-  password: 123456
-  host: m_mysql
+  user: root
+  password: root
+  host: 127.0.0.1
   port: 3306
   dbName: db_monitor
   tablePrefix: tb_
