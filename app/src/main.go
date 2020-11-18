@@ -1,12 +1,15 @@
 package main
 
 import (
-	"fmt"
+	"github.com/rs/zerolog/log"
 	"monitor/extend/conf"
+	"monitor/extend/logger"
 )
 
 func main() {
 	//配置初始化
 	conf.Setup()
-	fmt.Println(conf.DBConf)
+	//日志初始化
+	logger.Setup()
+	log.Info().Msg("test init")
 }
