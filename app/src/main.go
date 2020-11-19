@@ -3,6 +3,7 @@ package main
 import (
 	"monitor/extend/conf"
 	"monitor/extend/logger"
+	"monitor/extend/redis"
 	"monitor/models"
 )
 
@@ -13,5 +14,7 @@ func main() {
 	logger.Setup()
 	//数据库的初始化
 	models.Setup()
+	//redis初始化
+	redis.Setup()
 
 }
