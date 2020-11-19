@@ -4,6 +4,7 @@ import (
 	"monitor/extend/conf"
 	"monitor/extend/logger"
 	"monitor/extend/redis"
+	"monitor/extend/validator"
 	"monitor/models"
 )
 
@@ -16,5 +17,7 @@ func main() {
 	models.Setup()
 	//redis初始化
 	redis.Setup()
+	//验证器的初始化
+	validator.Setup()
 
 }
