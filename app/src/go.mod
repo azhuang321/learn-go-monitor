@@ -3,6 +3,7 @@ module monitor
 go 1.15
 
 require (
+	github.com/fatih/color v1.7.0
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator/v10 v10.4.1 // indirect
@@ -12,6 +13,7 @@ require (
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/pkg/errors v0.9.1
+	github.com/robfig/cron v1.2.0
 	github.com/rs/zerolog v1.20.0
 	github.com/spf13/viper v1.7.1
 	github.com/ugorji/go v1.2.0 // indirect

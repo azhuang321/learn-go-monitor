@@ -6,6 +6,7 @@ import (
 	"monitor/extend/redis"
 	"monitor/extend/validator"
 	"monitor/models"
+	"monitor/schedule"
 )
 
 func main() {
@@ -19,5 +20,6 @@ func main() {
 	redis.Setup()
 	//验证器的初始化
 	validator.Setup()
-
+	//定时任务初始化
+	schedule.Setup()
 }
