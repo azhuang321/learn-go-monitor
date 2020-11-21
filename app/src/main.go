@@ -1,11 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"monitor/extend/conf"
 	"monitor/extend/logger"
 	"monitor/extend/redis"
 	"monitor/extend/validator"
 	"monitor/models"
+	"monitor/router"
 	"monitor/schedule"
 )
 
@@ -22,4 +24,7 @@ func main() {
 	validator.Setup()
 	//定时任务初始化
 	schedule.Setup()
+
+	router := router.InitRouter()
+	router.Run(fmt.Sprintf(":%d", conf.ServerConf.Port))
 }
